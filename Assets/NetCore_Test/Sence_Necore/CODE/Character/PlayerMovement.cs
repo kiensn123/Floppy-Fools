@@ -12,6 +12,7 @@ public class PlayerMovement : NetworkBehaviour
     private Animator ani;
 
     [Header("Ramdom")]
+    private Vector3 networkPosition;
 
     [SerializeField]private float range =5 ;
     // [SerializeField] private List<Color> mauxac;
@@ -71,9 +72,21 @@ public class PlayerMovement : NetworkBehaviour
 
     void Update()
     {
-        if(!IsOwner) return; // nếu ko phải chủ sở hữu
-          // Xoay nhân vật bằng phím A/D
-        float rotation = Input.GetAxis("Horizontal"); // A/D
+
+
+
+        if(IsOwner) {
+            Local_TranForm();
+            SentPositionToServerRpc(transform.position);
+        } else{
+            transform.position = networkPosition;
+        }
+      
+       
+    }
+
+    void Local_TranForm(){
+         float rotation = Input.GetAxis("Horizontal"); // A/D
         transform.Rotate(0, rotation * rotateSpeed * Time.deltaTime, 0);
 
         // Di chuyển tiến/lùi bằng phím W/S
@@ -92,5 +105,23 @@ public class PlayerMovement : NetworkBehaviour
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         }
+    }
+
+
+    [ServerRpc]
+    private void SentPositionToServerRpc(Vector3 position)
+    {
+        SentPositionFromClientRpc(position);
+    }
+
+    [ClientRpc]
+    private void SentPositionFromClientRpc(Vector3 position)
+    {
+        // burası Hareket eden kişide True döner, hareket etmeyen kişide False döner.
+        // Böylece sadece hareket eden kişinin hareket Data'sı diger oyunculara yollanır
+        if (IsOwner)
+            return;
+
+        networkPosition = position;
     }
 }

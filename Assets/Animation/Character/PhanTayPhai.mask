@@ -8,4 +8,52 @@ AvatarMask:
   m_PrefabAsset: {fileID: 0}
   m_Name: PhanTayPhai
   m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-  m_Elements: []
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Armature.001
+    m_Weight: 0
+  - m_Path: Armature.001/Hips
+    m_Weight: 0
+  - m_Path: Armature.001/Hips/Pelvis.L
+    m_Weight: 0
+  - m_Path: Armature.001/Hips/Pelvis.L/UpperLeg.L
+    m_Weight: 0
+  - m_Path: Armature.001/Hips/Pelvis.L/UpperLeg.L/LowerLeg.L
+    m_Weight: 0
+  - m_Path: Armature.001/Hips/Pelvis.L/UpperLeg.L/LowerLeg.L/LowerLeg.L_end
+    m_Weight: 0
+  - m_Path: Armature.001/Hips/Pelvis.R
+    m_Weight: 0
+  - m_Path: Armature.001/Hips/Pelvis.R/UpperLeg.R
+    m_Weight: 0
+  - m_Path: Armature.001/Hips/Pelvis.R/UpperLeg.R/LowerLeg.R
+    m_Weight: 0
+  - m_Path: Armature.001/Hips/Pelvis.R/UpperLeg.R/LowerLeg.R/LowerLeg.R_end
+    m_Weight: 0
+  - m_Path: Armature.001/Spine
+    m_Weight: 0
+  - m_Path: Armature.001/Spine/UpperChest
+    m_Weight: 0
+  - m_Path: Armature.001/Spine/UpperChest/Head
+    m_Weight: 0
+  - m_Path: Armature.001/Spine/UpperChest/Head/Head_end
+    m_Weight: 0
+  - m_Path: Armature.001/Spine/UpperChest/Shoulder.L
+    m_Weight: 0
+  - m_Path: Armature.001/Spine/UpperChest/Shoulder.L/UpperArm.L
+    m_Weight: 0
+  - m_Path: Armature.001/Spine/UpperChest/Shoulder.L/UpperArm.L/LowerArm.L
+    m_Weight: 0
+  - m_Path: Armature.001/Spine/UpperChest/Shoulder.L/UpperArm.L/LowerArm.L/LowerArm.L_end
+    m_Weight: 0
+  - m_Path: Armature.001/Spine/UpperChest/Shoulder.R
+    m_Weight: 0
+  - m_Path: Armature.001/Spine/UpperChest/Shoulder.R/UpperArm.R
+    m_Weight: 1
+  - m_Path: Armature.001/Spine/UpperChest/Shoulder.R/UpperArm.R/LowerArm.R
+    m_Weight: 1
+  - m_Path: Armature.001/Spine/UpperChest/Shoulder.R/UpperArm.R/LowerArm.R/LowerArm.R_end
+    m_Weight: 1
+  - m_Path: Vert.003
+    m_Weight: 0

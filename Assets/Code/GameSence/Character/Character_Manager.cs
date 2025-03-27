@@ -41,18 +41,19 @@ public class Character_Manager : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetMouseButtonDown(0)){
-            animator.SetBool("TayTrai",true);
-        }
-        if(Input.GetMouseButtonUp(0)){
-            animator.SetBool("TayTrai",false);
-        }
-         if(Input.GetMouseButtonDown(1)){
-            animator.SetBool("TayPhai",true);
-        }
-        if(Input.GetMouseButtonUp(1)){
-            animator.SetBool("TayPhai",false);
-        }
+
+        // if(Input.GetMouseButtonDown(0)){
+        //     animator.SetBool("TayTrai",true);
+        // }
+        // if(Input.GetMouseButtonUp(0)){
+        //     animator.SetBool("TayTrai",false);
+        // }
+        //  if(Input.GetMouseButtonDown(1)){
+        //     animator.SetBool("TayPhai",true);
+        // }
+        // if(Input.GetMouseButtonUp(1)){
+        //     animator.SetBool("TayPhai",false);
+        // }
 
         Move();
         Jump();
@@ -72,7 +73,7 @@ public class Character_Manager : MonoBehaviour
         animator.SetFloat("Trai_Phai",horizon);
 
         float tocdo = Speed;
-        if (vetical<0){tocdo = Speed/1.5f;}
+        // if (vetical<0){tocdo = Speed/1.5f;}
 
         Vector3 moveDirection = (Humanoid.transform.forward * vetical + Humanoid.transform.right * horizon).normalized;
         //normalized khi bạn cần giữ nguyên hướng nhưng đảm bảo độ dài vector luôn là 1

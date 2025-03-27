@@ -9,6 +9,14 @@ public class ShootBall : NetworkBehaviour
     public Transform spawnPoint;  // Vị trí bắn (có thể là tay nhân vật)
     public float ballSpeed = 10f; // Tốc độ quả bóng
 
+    void Start()
+    {
+        // if (NetworkManager.Singleton != null && IsServer)
+        // {
+        //     NetworkManager.Singleton.NetworkConfig.TickRate = 60;
+        // }
+    }
+
     void Update()
     {
         // Bắn khi nhấn phím F

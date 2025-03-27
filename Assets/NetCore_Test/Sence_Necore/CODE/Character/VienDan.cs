@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class VienDan : NetworkBehaviour
 {
+  
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag!= "Player"){
