@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Netcode;
 using UnityEngine;
 
-public class Character_Manager : MonoBehaviour
+public class Character_Manager : NetworkBehaviour
 {
     [Header("OBJ_Contronler")]
 
@@ -36,6 +37,7 @@ public class Character_Manager : MonoBehaviour
     {
         // BoxCollider ChanDuoicolider = ChanDuoi.GetComponent<BoxCollider>();
         // Size = ChanDuoicolider.size;
+        
     }
 
 
@@ -54,6 +56,11 @@ public class Character_Manager : MonoBehaviour
         // if(Input.GetMouseButtonUp(1)){
         //     animator.SetBool("TayPhai",false);
         // }
+        if (!IsOwner){return;}
+        if (Humanoid.isKinematic)  
+        {
+            Humanoid.isKinematic = false; // Chắc chắn Rigidbody không ở chế độ Kinematic
+        }
 
         Move();
         Jump();
