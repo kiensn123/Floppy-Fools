@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id">
+  <string name="gcm_defaultSenderId" translatable="false">155796789458</string>
+  <string name="google_storage_bucket" translatable="false">floppy-fools.firebasestorage.app</string>
+  <string name="project_id" translatable="false">floppy-fools</string>
+  <string name="google_api_key" translatable="false">AIzaSyDLJ2rLm7kEVRaJ5EXsROfT4GyqA19p23g</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDLJ2rLm7kEVRaJ5EXsROfT4GyqA19p23g</string>
+  <string name="google_app_id" translatable="false">1:155796789458:android:240f2c28558e360cc7b50b</string>
+</resources>

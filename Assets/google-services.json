@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "155796789458",
+    "project_id": "floppy-fools",
+    "storage_bucket": "floppy-fools.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155796789458:android:240f2c28558e360cc7b50b",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.Ragdoll_Simulator"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLJ2rLm7kEVRaJ5EXsROfT4GyqA19p23g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
