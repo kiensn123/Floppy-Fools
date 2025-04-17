@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.Netcode;
 using UnityEngine;
 
-public class Character_Manager : NetworkBehaviour
+public class Character_Manager : MonoBehaviour
 {
     [Header("OBJ_Contronler")]
 
@@ -56,7 +56,7 @@ public class Character_Manager : NetworkBehaviour
         // if(Input.GetMouseButtonUp(1)){
         //     animator.SetBool("TayPhai",false);
         // }
-        if (!IsOwner){return;}
+        // if (!IsOwner){return;}
         if (Humanoid.isKinematic)  
         {
             Humanoid.isKinematic = false; // Chắc chắn Rigidbody không ở chế độ Kinematic

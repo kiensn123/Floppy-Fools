@@ -1,0 +1,33 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/___KIENDEV___/Tookit/file_uss/button_header.uss?fileID=7433441132597879392&amp;guid=f5ff18a87abbd524db1ae5c645d0b6b7&amp;type=3#button_header" />
+    <ui:VisualElement name="Safe_Zone" style="flex-grow: 1;">
+        <ui:VisualElement name="Header" style="flex-grow: 1; flex-direction: row; flex-wrap: nowrap; display: flex; visibility: visible; overflow: visible; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; height: auto; flex-shrink: 1; transform-origin: top; scale: 1 1; transition-property: flex-direction; width: 100%; max-height: 50px; justify-content: center; align-items: center; background-color: rgba(0, 0, 0, 0.48); -unity-background-image-tint-color: rgba(59, 59, 59, 0.57); align-self: flex-end; border-bottom-width: 3px; border-bottom-color: rgba(0, 0, 0, 0.18);">
+            <ui:Button text="HOME" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Button_Home" class="button-style" style="width: 80px; height: 100%; white-space: nowrap;" />
+            <ui:Button text="SETTING" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Button_Setting" class="button-style" style="width: 80px; height: 100%; white-space: nowrap;" />
+            <ui:Button text="STORE" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Button_Store" class="button-style" style="width: 80px; height: 100%; white-space: nowrap;" />
+            <ui:Button text="CREDITS" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Button_Creadits" class="button-style" style="width: 80px; height: 100%; white-space: nowrap;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="BODY" style="flex-grow: 1; -unity-background-scale-mode: stretch-to-fill; -unity-background-image-tint-color: rgb(255, 255, 255);">
+            <ui:VisualElement name="BenTrai" style="flex-grow: 1; width: 413px; transform-origin: left; margin-top: 0; padding-top: 80px; padding-right: 0; padding-bottom: 10px; padding-left: 0;">
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="button_Menu" style="width: auto; height: 150px; -unity-text-align: middle-center; justify-content: flex-end;">
+                    <ui:Label tabindex="-1" text="PLay game" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TieuDe" class="tieu_de" style="align-self: auto; justify-content: space-between; align-items: auto; flex-direction: column; flex-wrap: nowrap; opacity: 1; -unity-text-align: lower-left;" />
+                    <ui:Label tabindex="-1" text="Có thể chơi online hoặc offline" parse-escape-sequences="true" display-tooltip-when-elided="true" name="MoTa" style="align-self: auto; justify-content: space-between; align-items: auto; flex-direction: column; flex-wrap: nowrap; opacity: 1; -unity-text-align: lower-left;" />
+                </ui:Button>
+                <ui:VisualElement name="KhungGiua" style="flex-grow: 1; flex-direction: row; height: 156px; width: 408px; align-items: flex-start; justify-content: flex-end; align-self: auto; transition-property: none; max-width: none; max-height: 150px;">
+                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="button_Menu" style="width: 199px; height: 150px; -unity-text-align: middle-center; justify-content: flex-end; margin-top: 0; margin-right: 2px; margin-bottom: 0; margin-left: 0;">
+                        <ui:Label tabindex="-1" text="Setting" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TieuDe" class="tieu_de" style="align-self: auto; justify-content: space-between; align-items: auto; flex-direction: column; flex-wrap: nowrap; opacity: 1; -unity-text-align: lower-left;" />
+                        <ui:Label tabindex="-1" text="cài đặt của game" parse-escape-sequences="true" display-tooltip-when-elided="true" name="MoTa" style="align-self: auto; justify-content: space-between; align-items: auto; flex-direction: column; flex-wrap: nowrap; opacity: 1; -unity-text-align: lower-left;" />
+                    </ui:Button>
+                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="Button" class="button_Menu" style="width: 202px; height: 150px; -unity-text-align: middle-center; justify-content: flex-end; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;">
+                        <ui:Label tabindex="-1" text="Credits" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TieuDe" class="tieu_de" style="align-self: auto; justify-content: space-between; align-items: auto; flex-direction: column; flex-wrap: nowrap; opacity: 1; -unity-text-align: lower-left;" />
+                        <ui:Label tabindex="-1" text="thông tin liên hệ" parse-escape-sequences="true" display-tooltip-when-elided="true" name="MoTa" style="align-self: auto; justify-content: space-between; align-items: auto; flex-direction: column; flex-wrap: nowrap; opacity: 1; -unity-text-align: lower-left; width: 174px;" />
+                    </ui:Button>
+                </ui:VisualElement>
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="button_Menu" style="width: auto; height: 150px; -unity-text-align: middle-center; justify-content: flex-end; opacity: 1;">
+                    <ui:Label tabindex="-1" text="Store" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TieuDe" class="tieu_de" style="align-self: auto; justify-content: space-between; align-items: auto; flex-direction: column; flex-wrap: nowrap; opacity: 1; -unity-text-align: lower-left;" />
+                    <ui:Label tabindex="-1" text="vật phẩm và đồ dùng" parse-escape-sequences="true" display-tooltip-when-elided="true" name="MoTa" style="align-self: auto; justify-content: space-between; align-items: auto; flex-direction: column; flex-wrap: nowrap; opacity: 1; -unity-text-align: lower-left;" />
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
